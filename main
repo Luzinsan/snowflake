@@ -1,0 +1,8 @@
+n = int(input())
+a = [['.']*n for i in range(n)]
+for i in range(n):
+    for j in range(n):
+        if i==n//2 or j==n//2 or i==j or j==n-1-i:
+            a[i][j]='*'
+for row in a:
+    print(' '.join(row))
